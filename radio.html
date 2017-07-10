@@ -1,0 +1,33 @@
+<html>
+<head></head>
+<body>
+
+<script type="text/javascript">
+function mostrarSeleccionados(){
+	
+	if (document.getElementById('r1').checked) {
+		alert('no tiene estudios');
+	}
+	if (document.getElementById('r2').checked) {
+		alert('Tiene studios Primarios');
+	}
+	if (document.getElementById('r3').checked) {
+		alert('Tiene estudios Secundarios')
+	}
+	if (document.getElementById('r4').checked) {
+		alert('Tiene estudios Universitarios')
+	}
+}
+</script>
+
+<form>
+	<input type="radio" id="r1" name="estudios">Sin Estudios<br>
+	<input type="radio" id="r2" name="estudios">Primarios<br>
+	<input type="radio" id="r3" name="estudios">Secundarios<br>
+	<input type="radio" id="r4" name="estudios">Universitarios<br>
+	
+	<input type="button" value="Mostrar" onClick="mostrarSeleccionados()">
+</form>
+
+</body>
+</html>

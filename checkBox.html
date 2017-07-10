@@ -1,0 +1,33 @@
+<html>
+<head></head>
+<body>
+
+<script type="text/javascript">
+function contarSeleccionados(){
+	var cant=0;
+	if (document.getElementById('cb1').checked) {
+		cant++;
+	}
+	if (document.getElementById('cb2').checked) {
+		cant++;
+	}
+	if (document.getElementById('cb3').checked) {
+		cant++;
+	}
+	if (document.getElementById('cb4').checked) {
+		cant++;
+	}
+	alert('conoce '+cant+' Lenguajes')
+}
+</script>
+
+<form>
+	<input type="checkbox" id="cb1">JavaScript<br>
+	<input type="checkbox" id="cb2">PHP<br>
+	<input type="checkbox" id="cb3">JSP<br>
+	<input type="checkbox" id="cb4">VB.Net<br>
+	<input type="button" value="Mostrar" onClick="contarSeleccionados()">
+</form>
+
+</body>
+</html>
